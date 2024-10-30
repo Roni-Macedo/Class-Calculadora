@@ -34,17 +34,17 @@ dependencies {
 
 ## Estrutura do Código
 
-> MainActivity: Inicializa o cliente de localização e define o conteúdo da tela com o Jetpack Compose.
-LocationApp: componente que pode ser composto que solicita permissões de localização e exibe a localização atual do dispositivo.
-LocationWorker: Worker executado periodicamente para obter a localização e exibir uma notificação com os dados atuais.
-Funções Auxiliares:
-getCurrentLocation: Obtém a última localização conhecida do dispositivo.
-createNotificationChannel: Cria o canal de notificação para dispositivos com Android O (API 26) ou superior.
-showLocationNotification: Exibe uma notificação com a localização.
+- **MainActivity:** Inicializa o cliente de localização e define o conteúdo da tela com o Jetpack Compose.
+- **LocationApp:** componente que pode ser composto que solicita permissões de localização e exibe a localização atual do dispositivo.
+- **LocationWorker:** Worker executado periodicamente para obter a localização e exibir uma notificação com os dados atuais.
+- **Funções Auxiliares:**
+    + **getCurrentLocation:** Obtém a última localização conhecida do dispositivo.
+    + **createNotificationChannel:** Cria o canal de notificação para dispositivos com Android O (API 26) ou superior.
+    + **showLocationNotification:** Exibe uma notificação com a localização.
 
 ## Permissões
 
-> No AndroidManifest.xml, adicione as seguintes permissões para que o aplicativo funcione corretamente:
+### No AndroidManifest.xml, adicione as seguintes permissões para que o aplicativo funcione corretamente:
 
 ```
 
